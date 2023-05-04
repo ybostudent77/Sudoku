@@ -1,0 +1,14 @@
+<h2>Submit</h2>
+<% @grid.each do |row| %>
+  <p><%= row.join(" ") %></p>
+<% end %>
+
+<% if @isdone %>
+  <div class=success">
+    <h4>SUCCESS</h4>
+  </div>
+<% else %>
+  <div class=bad">
+    <h4>TRY AGAIN, NO VALID</h4>
+  </div>
+<% end %>
